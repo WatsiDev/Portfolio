@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Copy from "../components/Copy.astro";
+import GitHub from "../components/GitHub.astro";
+import Linkedin from "../components/Linkedin.astro";
+import Mail from "../components/Mail.astro";
+---
+
+<Layout title="Portfolio">
+  <!-- Sobre mi -->
+  <main class="flex flex-wrap justify-center">
+    <article
+      id="aboutme"
+      class="md:grid md:grid-cols-1 md:w-2/3 rounded-sm shadow-md text-center mt-20 bg-black bg-opacity-5 backdrop-blur-sm text-white"
+    >
+      <h1 class="p-2 text-3xl font-semibold">About me</h1>
+      <div class="p-3 md:grid md:grid-cols-2 md:items-center">
+        <div class="flex justify-center">
+          <img
+            src="/FotoPerfil.jpg"
+            alt="Foto perfil"
+            class="w-2/4 shadow-md rounded-3xl py-4"
+          />
+        </div>
+        <p class="text-start">
+          Hola, soy un desarrollador móvil en formación con conocimientos en
+          Kotlin, Jetpack Compose y Android Studio. Actualmente, busco
+          oportunidades para adquirir experiencia práctica en el desarrollo de
+          aplicaciones móviles, preferiblemente de forma remota debido a mis
+          estudios universitarios. Estoy motivado por aprender, contribuir a
+          proyectos innovadores, y crecer profesionalmente en un entorno que me
+          permita aplicar y mejorar mis habilidades técnicas.
+        </p>
+      </div>
+      <strong>Contact me</strong>
+      <div class="p-3 flex flex-wrap gap-3 justify-center">
+        <Mail />
+        <p class="">Jairvazquez604@gmail.com</p>
+        <p>|</p>
+        <a href="https://github.com/WatsiDev">
+          <GitHub />
+        </a>
+        <a href="https://www.linkedin.com/in/jair-vazquez-de-la-cruz-2000ab2a7/">
+          <Linkedin/>
+        </a>
+      </div>
+    </article>
+
+    <!-- Section tecnologias -->
+    <article
+      id="technologies"
+      class="md:grid md:grid-cols-1 md:w-2/3 rounded-md text-center mt-20 bg-black bg-opacity-5 backdrop:blur-sm text-white p-5"
+    >
+      <h1 class="p-2 text-3xl font-semibold">Tecnologias</h1>
+      <div class="grid grid-cols-5 gap-4 py-8 px-4">
+        <img
+          src="/tailwindcss.svg"
+          alt="Tailwind"
+          class="w-28"
+          title="Tailwind CSS"
+        />
+        <img src="/kotlin.svg" alt="Kotlin" class="w-28" title="Kotlin" />
+        <img
+          src="/jetpackcompose.svg"
+          alt="Jetpack Compose"
+          class="w-28"
+          title="Jetpack Compose"
+        />
+        <img src="/html5.svg" alt="HTML5" class="w-28" title="HTML5" />
+        <img src="/github.svg" alt="GitHub" class="w-28" title="GitHub" />
+        <img src="/git.svg" alt="Git" class="w-28" title="Git" />
+        <img src="/favicon.svg" alt="Astro" class="w-28" title="Astro" />
+        <img src="/css3.svg" alt="CSS3" class="w-28" title="CSS3" />
+        <img
+          src="/androidstudio.svg"
+          alt="Android Studio"
+          class="w-28"
+          title="Android Studio"
+        />
+        <img src="/android.svg" alt="Android" class="w-28" title="Android" />
+      </div>
+    </article>
+
+    <!-- Proyectos y asi xd -->
+    <article
+      id="proyects"
+      class="grid md:grid-cols-1 md:w-2/3 gap-2 rounded-md text-center mt-20 bg-black bg-opacity-5 backdrop-blur-sm text-white p-5"
+    >
+    <h1 class="font-semibold text-3xl">Proyectos</h1>
+
+    <div class="md:grid gap-3 md:grid-cols-2 md:gap-2 md:pt-2 py-3">
+      <Card
+        image="/EncounterApp.png"
+        imageAlt="Charizard Shiny"
+        title="Shiny Encounter Counter"
+        body="App para contar los Pokémon avistados en busqueda de shinys, creada con Kotlin y Jetpack Compose"
+        GitHubLink="https://github.com/WatsiDev/ShinyEncounter"
+        PlayStoreLink="/"
+      />
+      <Card
+      image="/HoldemMarketing.png"
+      imageAlt="Holdem Marketing Pagina Oficial"
+      title="Holdem Marketing Pagina Oficial"
+      body="Desarrolle la plagina oficial de Holdem Marketing con las tecnologias Astro y tailwind CSS."
+      GitHubLink="https://github.com/WatsiDev/HoldemMarketing"
+      WebSiteLink="https://watsidev.github.io/Holdem.github.io/"
+      />
+    </div>
+    </article>
+  </main>
+</Layout>

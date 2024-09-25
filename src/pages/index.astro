@@ -5,6 +5,7 @@ import Copy from "../components/Copy.astro";
 import GitHub from "../components/GitHub.astro";
 import Linkedin from "../components/Linkedin.astro";
 import Mail from "../components/Mail.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Portfolio">
@@ -12,10 +13,10 @@ import Mail from "../components/Mail.astro";
   <main class="flex flex-wrap justify-center">
     <article
       id="aboutme"
-      class="md:grid md:grid-cols-1 md:w-2/3 rounded-sm shadow-md text-center mt-20 bg-black bg-opacity-5 backdrop-blur-sm text-white"
+      class="lg:grid lg:grid-cols-1 lg:w-2/3 rounded-sm shadow-md text-center mt-20 bg-black bg-opacity-5 backdrop-blur-sm text-white"
     >
       <h1 class="p-2 text-3xl font-semibold">About me</h1>
-      <div class="p-3 md:grid md:grid-cols-2 md:items-center">
+      <div class="p-3 lg:grid lg:grid-cols-2 lg:items-center">
         <div class="flex justify-center">
           <img
             src="/FotoPerfil.jpg"
@@ -50,7 +51,7 @@ import Mail from "../components/Mail.astro";
     <!-- Section tecnologias -->
     <article
       id="technologies"
-      class="md:grid md:grid-cols-1 md:w-2/3 rounded-md text-center mt-20 bg-black bg-opacity-5 backdrop:blur-sm text-white p-5"
+      class="lg:grid lg:grid-cols-1 lg:w-2/3 rounded-md text-center mt-20 bg-black bg-opacity-5 backdrop:blur-sm text-white p-5"
     >
       <h1 class="p-2 text-3xl font-semibold">Tecnologias</h1>
       <div class="grid grid-cols-5 gap-4 py-8 px-4">
@@ -85,18 +86,18 @@ import Mail from "../components/Mail.astro";
     <!-- Proyectos y asi xd -->
     <article
       id="proyects"
-      class="grid md:grid-cols-1 md:w-2/3 gap-2 rounded-md text-center mt-20 bg-black bg-opacity-5 backdrop-blur-sm text-white p-5"
+      class="grid lg:grid-cols-1 lg:w-2/3 gap-2 rounded-md text-center mt-20 bg-black bg-opacity-5 backdrop-blur-sm text-white p-5"
     >
     <h1 class="font-semibold text-3xl">Proyectos</h1>
 
-    <div class="md:grid gap-3 md:grid-cols-2 md:gap-2 md:pt-2 py-3">
+    <div class="lg:grid gap-3 lg:grid-cols-2 lg:gap-2 lg:pt-2 py-3">
       <Card
         image="/EncounterApp.png"
         imageAlt="Charizard Shiny"
         title="Shiny Encounter Counter"
         body="App para contar los Pokémon avistados en busqueda de shinys, creada con Kotlin y Jetpack Compose"
         GitHubLink="https://github.com/WatsiDev/ShinyEncounter"
-        PlayStoreLink="/"
+        
       />
       <Card
       image="/HoldemMarketing.png"
@@ -104,9 +105,10 @@ import Mail from "../components/Mail.astro";
       title="Holdem Marketing Pagina Oficial"
       body="Desarrolle la plagina oficial de Holdem Marketing con las tecnologias Astro y tailwind CSS."
       GitHubLink="https://github.com/WatsiDev/HoldemMarketing"
-      WebSiteLink="https://watsidev.github.io/Holdem.github.io/"
+      WebSiteLink="https://holdemmarketing.netlify.app"
       />
     </div>
     </article>
   </main>
+  <Footer/>
 </Layout>

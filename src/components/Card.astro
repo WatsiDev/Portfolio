@@ -17,7 +17,7 @@ const { imageAlt, image, title, body, GitHubLink, PlayStoreLink, WebSiteLink } =
 ---
 
 <div class="flex flex-wrap justify-center shadow-md rounded-md bg-slate-300 text-black">
-	<img src={image} alt={imageAlt} class=" bg-gray-200 rounded-md shadow-md h-2/3">
+	<img src={image} alt={imageAlt} class=" bg-gray-200 rounded-md shadow-md h-2/3 w-full">
 	<h1 class="pt-6 text-lg font-semibold">
 		{title}
 	</h1>
@@ -25,18 +25,18 @@ const { imageAlt, image, title, body, GitHubLink, PlayStoreLink, WebSiteLink } =
 		{body}
 	</p>
 	<div class="grid grid-cols-2 gap-3 py-4">
-		<a href={GitHubLink} class="bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-md flex items-center justify-center p-2">
+		<a href={GitHubLink} class="bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-md flex items-center justify-center p-2 hover:bg-gradient-to-r hover:from-[#0182F4] hover:to-[#009BA3] ">
 			<GitHub class="mr-2" />
 			<span>View Code</span>
 		</a>
 		{PlayStoreLink && (
-			<a href={PlayStoreLink} class="flex items-center justify-center p-2 bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-md">
+			<a href={PlayStoreLink} class="flex items-center justify-center p-2 bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] hover:bg-gradient-to-r hover:from-[#0182F4] hover:to-[#009BA3] rounded-md">
 				<PlayStore class="mr-2" />
 				<span>Play Store</span>
 			</a>
 		)}
 		{WebSiteLink && (
-			<a href={WebSiteLink} class="flex items-center justify-center p-2 bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-md">
+			<a href={WebSiteLink} class="flex items-center justify-center p-2 bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] hover:bg-gradient-to-r hover:from-[#0182F4] hover:to-[#009BA3] rounded-md">
 				<WebSite class="mr-2"/>
 				<span>Web Site</span>
 			</a>

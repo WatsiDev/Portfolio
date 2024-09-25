@@ -9,6 +9,28 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Portfolio">
+
+  <header class="text-white gap-4 py-4 bg-black bg-opacity-5 backdrop:blur-sm shadow-md">
+    <h1 class="text-center pb-3 text-2xl font-semibold">Jair Vazquez De La Cruz</h1>
+    <ul class="flex justify-evenly">
+      <li>
+        <a href="#aboutme" class="hover:bg-slate-400 px-2 py-1 rounded-lg hover:bg-opacity-10 hover:shadow-sm">
+          Sobre mí
+        </a>
+      </li>
+      <li>
+        <a href="#technologies" class="hover:bg-slate-400 px-2 py-1 rounded-lg hover:bg-opacity-10 hover:shadow-sm">
+          Tecnologias
+        </a>
+      </li>
+      <li>
+        <a href="#proyects" class="hover:bg-slate-400 px-2 py-1 rounded-lg hover:bg-opacity-10 hover:shadow-sm">
+          Proyectos
+        </a>
+      </li>
+    </ul>
+  </header>
+
   <!-- Sobre mi -->
   <main class="flex flex-wrap justify-center">
     <article

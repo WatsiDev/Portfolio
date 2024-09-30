@@ -16,12 +16,12 @@ interface Props {
 const { imageAlt, image, title, body, GitHubLink, PlayStoreLink, WebSiteLink } = Astro.props;
 ---
 
-<div class="flex flex-wrap justify-center shadow-md rounded-md bg-slate-300 text-black">
+<div class="flex flex-wrap justify-center shadow-md rounded-md bg-slate-300 text-black md:pb-9">
 	<img src={image} alt={imageAlt} class=" bg-gray-200 rounded-md shadow-md h-2/3 w-full">
 	<h1 class="pt-6 text-lg font-semibold">
 		{title}
 	</h1>
-	<p class="py-3">
+	<p class="py-3 px-2">
 		{body}
 	</p>
 	<div class="grid grid-cols-2 gap-3 py-4">
@@ -42,7 +42,6 @@ const { imageAlt, image, title, body, GitHubLink, PlayStoreLink, WebSiteLink } =
 			</a>
 		)}
 	</div>
-	
 </div>
 		
 
